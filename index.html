@@ -9,14 +9,24 @@
     <body>
 
 
-    <div class="container pt-5" id="app">
-        <div class="card center">
-            <h1>Лічильник: {{ counter }}</h1>
-            <div>
-                <button class="btn primary" v-on:click="">Додати</button>
-                <button class="btn danger">Відняти</button>
-            </div>
+<!--    <div class="container pt-5" id="app">-->
+<!--        <div class="card center">-->
+<!--            <h1>{{ title }}: {{ counter }}</h1>-->
+<!--            <div>-->
+<!--                <button class="btn primary" v-on:click="counter++">Додати</button>-->
+<!--                <button class="btn danger" v-on:click="counter = counter - 1">Відняти</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="container" id="app">
+        <div class="card">
+            <h1>{{ title }}</h1>
+                <div class="form-control"></div>
+                    <input type="text" v-bind:placeholder="placeholderString"/>
         </div>
+        <button class="btn">Додати</button>
+        <hr />
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
